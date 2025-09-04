@@ -36,7 +36,7 @@ app.use(express.json());
 
 // Set port and verify_token
 const port = process.env.PORT || 3000;
-const verifyToken = process.env.WEBHOOK_VERIFY_TOKEN;
+const verifyToken = process.env.WEBHOOKVTOKEN;
 
 // Route for GET requests
 app.get('/', (req, res) => {
