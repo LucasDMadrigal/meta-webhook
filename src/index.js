@@ -46,6 +46,7 @@ app.get('/', (req, res) => {
     console.log('WEBHOOK VERIFIED');
     res.status(200).send(challenge);
   } else {
+      console.log('WEBHOOK not VERIFIED');
     res.status(403).end();
   }
 });
